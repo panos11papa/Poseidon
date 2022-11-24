@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="2.5" type="template" client="site" method="upgrade">
+	
+	<name>horme_3</name>
+	<creationDate>06/02/2022</creationDate>
+	<author>Spiros Petrakis</author>
+	<copyright>Copyright © 2015 - 2022 Spiros Petrakis</copyright>
+	<authorEmail>support@yourgeek.gr</authorEmail>
+	<authorUrl>https://www.olympianthemes.com</authorUrl>
+	<version>2.0.0</version>
+	<description>
+	<![CDATA[
+	<p>Horme 3 - A fully bootstraped Joomla! 3 and VirtueMart 3.</p>
+  <ul>
+	<li>Bootstrap 3.4.1</li>
+	<li>Mobile optimized</li>
+	<li>Fast loading</li>
+	</ul>
+	<hr>
+  <h3>Support</h3>
+  <ul>
+  <li><a href="https://www.olympianthemes.com/documentation/horme-3-free-documentation.html" target="_blank">Documentation</a></li>
+  <li><a href="mailto:support@olympianthemes.com">support@olympianthemes.com</a></li>
+  </ul>
+	]]>
+	</description>
+	
+	<files>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>logic.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_horme_3.ini</language>
+		<language tag="de-DE">de-DE/de-DE.tpl_horme_3.ini</language>
+	</languages>
+	
+	<positions>
+		<position>toolbar-l</position>
+		<position>toolbar-r</position>
+		<position>logo</position>
+		<position>search</position>
+		<position>cart</position>
+		<position>menu</position>
+		<position>slider</position>
+		<position>breadcrumbs</position>
+		<position>top-a</position>
+		<position>top-b</position>
+		<position>top-c</position>
+		<position>sidebar-a</position>
+		<position>sidebar-b</position>
+		<position>innertop</position>
+		<position>innerbottom</position>
+		<position>bottom-a</position>
+		<position>bottom-b</position>
+		<position>bottom-c</position>
+		<position>footer</position>
+		<position>copyright</position>
+		<position>absolute</position>
+		<position>debug</position>
+	</positions>
+
+	<config>
+		<fields name="params">
+			<fieldset name="template">
+				<field name="container" type="list" default="container" label="TPL_VM_FIELD_WIDTH" description="TPL_VM_FIELD_WIDTH_DESC" filter="string">
+					<option value="container">Box</option>
+					<option value="container-fluid">Full Width</option>
+				</field>
+				<field name="mobileLogo" label="Mobile logo" description="Select or upload an image" type="media" directory="images" />
+				<field name="offcanvasLogo" label="Offcanvas menu logo" description="Select or upload an image" type="media" directory="images" />
+				<field name="background" label="Background image" description="Select or upload a background image" type="media" directory="images" />
+				<field name="bgcolor"  type="text" default="" label="TPL_VM_FIELD_BACKGROUND_COLOR" description="TPL_VM_FIELD_BACKGROUND_COLOR_DESC" filter="string" />
+				<field name="boxcolor"  type="text" default="" label="TPL_VM_FIELD_BOX_COLOR" description="TPL_VM_FIELD_BOX_COLOR_DESC" filter="string" />
+				<field name="customcss" type="radio" default="0" label="TPL_VM_FIELD_CUSTOM" description="TPL_VM_FIELD_CUSTOM_DESC" class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="customjs" type="radio" default="0" label="TPL_VM_FIELD_CUSTOMJS" description="TPL_VM_FIELD_CUSTOMJS_DESC" class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="credit" type="radio" default="1" label="TPL_VM_FIELD_CREDITS" description="TPL_VM_FIELD_CREDITS_DESC" class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="fonts" label="TPL_VM_FONTS">
+
+				<field name="googleFont"
+				type="radio"
+				class="btn-group btn-group-yesno"
+				default="0"
+				label="TPL_VM_GOOGLE_FONTS"
+				description=""
+				>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+				</field>
+				<field name="gfontslink" type="textarea" default="" label="TPL_VM_GOOGLEFONTS_LINK" description="TPL_VM_GOOGLEFONTS_LINK_DESC" class="span6" rows="10" cols="50" filter="raw"/>
+				<field name="bodygfontscss" type="textarea" default="" label="TPL_VM_GOOGLEFONTS_BODY_CSS" description="" class="span6" rows="10" cols="50" filter="raw"/>
+
+			</fieldset>
+
+			<fieldset name="seo">
+				<field name="analytics" type="textarea" default="" label="TPL_VM_FIELD_ANALYTICS" description="TPL_VM_FIELD_ANALYTICS_DESC" rows="10" cols="50" filter="raw"/>
+			</fieldset>
+
+		</fields>
+	</config>
+
+</extension>

@@ -1,0 +1,30 @@
+/**
+* @package  Horme  3  template
+* @author Spiros Petrakis
+* @copyright	Copyright (C) 2015 - 2022 Spiros Petrakis. All rights reserved.
+* @license		GNU General Public License version 2 or later
+*/
+
+.ratingbox {
+	white-space:nowrap;
+	position:relative;
+}
+
+.ratingbox span {
+	font-size:14px;
+	color:#ccc;
+}
+
+.stars-orange {
+	overflow:hidden;
+	position:absolute;
+	z-index:1;
+}
+
+.stars-orange span, .list-reviews .vote {
+	color:#f0ad4e;
+}
+
+.dummy > div {
+	width:90px;
+}

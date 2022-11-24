@@ -1,0 +1,13 @@
+/**
+* @package  Horme  3  template
+* @author Spiros Petrakis
+* @copyright	Copyright (C) 2015 - 2022 Spiros Petrakis. All rights reserved.
+* @license		GNU General Public License version 2 or later
+*/
+
+* {
+	background:transparent !important;
+	color:#000 !important;
+	box-shadow:none !important;
+	text-shadow:none !important;
+}
